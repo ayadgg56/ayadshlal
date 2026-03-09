@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرجع صيانة الهواتف - إياد شلال</title>
+    <!-- Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>📱 موسوعة أعطال الهواتف</h1>
+        <p>مرجع متكامل للمبتدئين والمحترفين في صيانة الجوالات</p>
+    </header>
+
+    <main>
+        <!-- قسم البحث والتصفية -->
+        <section class="filters">
+            <input type="text" id="searchInput" placeholder="🔍 ابحث عن عطل...">
+            <select id="categoryFilter">
+                <option value="all">كل التصنيفات</option>
+                <option value="شحن">شحن</option>
+                <option value="بطارية">بطارية</option>
+                <option value="شاشة">شاشة</option>
+                <option value="صوت">صوت</option>
+                <option value="كاميرا">كاميرا</option>
+                <option value="برمجي">برمجي</option>
+                <option value="شبكات">شبكات</option>
+                <option value="نادر">نادر</option>
+                <option value="about">👤 لمحة عني</option>
+            </select>
+        </section>
+
+        <!-- بطاقات الأعطال (أو لمحة عني) -->
+        <section class="issues-grid" id="issuesGrid">
+            <!-- يتم تعبئتها بواسطة JavaScript -->
+        </section>
+
+        <!-- نافذة منبثقة لتفاصيل العطل (مودال) -->
+        <div id="issueModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <div id="modalDetails"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 - مرجع صيانة الهواتف | بواسطة <strong>إياد شلال</strong></p>
+        <div class="footer-social">
+            <a href="https://wa.me/message/OKMVF7BBPB37E1" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/pr_ayad?igsh=YWEya2dqMHNzcnht" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
